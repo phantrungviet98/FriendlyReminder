@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "828623524609",
+    "firebase_url": "https://friendlyreminder-c04d7.firebaseio.com",
+    "project_id": "friendlyreminder-c04d7",
+    "storage_bucket": "friendlyreminder-c04d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828623524609:android:656f467823a5d774498100",
+        "android_client_info": {
+          "package_name": "com.friendlyreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828623524609-r54q5ote1ih7ac5qbg9n18c065jh5r1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8TMeLn5qG4XWlqfChrteCqE2r5tN9rWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828623524609-r54q5ote1ih7ac5qbg9n18c065jh5r1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
