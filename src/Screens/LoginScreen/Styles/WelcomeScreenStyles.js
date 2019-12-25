@@ -6,7 +6,7 @@ export const Styles = StyleSheet.create({
     flex: 1,
     paddingVertical: 70,
     paddingHorizontal: 20,
-    backgroundColor: Colors.white_FFFFFF
+    backgroundColor: Colors.white_FFFFFF,
   },
   button1: {
     backgroundColor: Colors.green_42CA53,
@@ -27,12 +27,12 @@ export const Styles = StyleSheet.create({
     marginTop: 50,
     flex: 4,
     justifyContent: 'space-around',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   skip: {
     marginTop: 30,
     flex: 4,
     textDecorationLine: 'underline',
-    alignSelf: 'center'
-  }
+    alignSelf: 'center',
+  },
 })

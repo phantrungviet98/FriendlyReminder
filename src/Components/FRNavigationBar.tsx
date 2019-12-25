@@ -1,11 +1,14 @@
 import React from 'react'
-import { TouchableOpacity, View } from 'react-native'
-import { useNavigation } from 'react-navigation-hooks'
+import {TouchableOpacity, View} from 'react-native'
+import {useNavigation} from 'react-navigation-hooks'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import { Styles } from './Styles/FRNavigationBarStyles'
+import {Styles} from './Styles/FRNavigationBarStyles'
+
+export interface Props {
+}
 
 export const FRNavigationBar = () => {
-  const { goBack } = useNavigation()
+  const {goBack} = useNavigation()
 
   return (
     <View style={Styles.container}>

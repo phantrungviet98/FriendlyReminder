@@ -1,10 +1,11 @@
 import {StyleSheet} from 'react-native'
 import {Colors} from '../../Assets'
+import normalize from 'react-native-normalize/src/index'
 
 export const Styles = StyleSheet.create({
   input: {
     borderWidth: 1,
     borderColor: 'gray',
-    paddingHorizontal: 16
-  }
+    padding: normalize(16),
+  },
 })

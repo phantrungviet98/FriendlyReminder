@@ -9,9 +9,9 @@ export const Styles = StyleSheet.create({
     shadowOpacity: 0.75,
     shadowRadius: 5,
     shadowColor: 'grey',
-    shadowOffset: { height: 0, width: 0 },
+    shadowOffset: {height: 0, width: 0},
   },
   content: {
-    color: Colors.white_FFFFFF
-  }
+    color: Colors.white_FFFFFF,
+  },
 })

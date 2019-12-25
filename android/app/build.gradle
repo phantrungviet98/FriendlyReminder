@@ -76,7 +76,7 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-    entryFile: "index.js",
+    entryFile: "index.ts",
     enableHermes: false,  // clean and rebuild if changing
 ]
 
@@ -181,7 +181,7 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
-    
+
     // Firebase dependencies
     implementation 'com.google.firebase:firebase-analytics:17.2.0'
 

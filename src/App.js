@@ -6,15 +6,12 @@
  * @flow
  */
 
-import React, {useEffect} from 'react';
+import React, {useEffect} from 'react'
 
-import AppContainer from './Navigations/AppNavigation';
+import AppContainer from './Navigations/AppNavigation'
 
 const App = (props) => {
+  return <AppContainer />
+}
 
-  return (
-    <AppContainer />
-  );
-};
-
-export default App;
+export default App
