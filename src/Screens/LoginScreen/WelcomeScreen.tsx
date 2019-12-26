@@ -1,15 +1,36 @@
 import React from 'react'
-import {View, Text, TouchableOpacity, StatusBar, SafeAreaView} from 'react-native'
+import {View, Text, StatusBar, SafeAreaView} from 'react-native'
 import {Styles} from './Styles/WelcomeScreenStyles'
 import {useNavigation} from 'react-navigation-hooks'
 import {FRTitle, FRButton, FRDescriptionTitle} from '../../Components'
+import {FirebaseStore} from '../../Store/Firebase'
 
 export interface Props {
 
 }
 
-const WelcomeScreen: React.FC<Props> = (props) => {
+const WelcomeScreen: React.FC<Props> = () => {
   const {navigate} = useNavigation()
+
+  const loginWithFacebook = () => {
+    FirebaseStore.loginWithFacebook().then(res => {
+      if (res.user) {
+        alert('Sign In Success')
+      } else {
+        alert('Failre')
+      }
+    })
+  }
+
+  const loginWithGoogle = () => {
+    FirebaseStore.loginWithGoogle().then(res => {
+      if (res.user) {
+        alert('Sign In Success')
+      } else {
+        alert('Failre')
+      }
+    })
+  }
 
   return (
     <View style={Styles.container}>
@@ -25,12 +46,12 @@ const WelcomeScreen: React.FC<Props> = (props) => {
         />
         <FRButton
           style={Styles.button2}
-          onPress={() => alert('Coming soon')}
+          onPress={loginWithFacebook}
           title={'Continue with Facebook'}
         />
         <FRButton
           style={Styles.button3}
-          onPress={() => alert('Coming soon')}
+          onPress={loginWithGoogle}
           title={'Continue with Google'}
         />
       </View>

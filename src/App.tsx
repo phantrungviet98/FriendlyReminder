@@ -6,11 +6,11 @@
  * @flow
  */
 
-import React, {useEffect} from 'react'
+import React from 'react'
 
 import AppContainer from './Navigations/AppNavigation'
 
-const App = (props) => {
+const App = () => {
   return <AppContainer />
 }
 
