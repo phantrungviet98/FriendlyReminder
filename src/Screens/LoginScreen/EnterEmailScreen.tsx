@@ -1,8 +1,7 @@
-import React from 'react'
+import * as React from 'react'
 import {SafeAreaView, View} from 'react-native'
 import {Styles} from './Styles/EnterEmailScreenStyles'
 import {FRTitle, FRDescriptionTitle, FRTextInput, FRButton, FRNavigationBar} from '../../Components'
-import {Colors} from '../../Assets'
 
 const EnterEmailScreen = () => {
   return (
@@ -12,13 +11,13 @@ const EnterEmailScreen = () => {
       <View style={Styles.wrapContent}>
         <FRTitle content={'Enter your email...'} />
         <FRDescriptionTitle content={'Kindly provide your email address.'} />
-        <View style={{flex: 2, justifyContent: 'center'}}>
+        <View style={Styles.wrapTextInput}>
           <FRTextInput placeholder={'Email Address'} />
         </View>
-        <View style={{flex: 3, alignItems: 'center'}}>
+        <View style={Styles.wrapButton}>
           <FRButton
             title={'Next >>'}
-            style={{backgroundColor: Colors.green_42CA53, paddingHorizontal: 20, height: 50}}
+            style={Styles.button}
           />
         </View>
       </View>

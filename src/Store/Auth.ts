@@ -16,10 +16,10 @@ const iosConfig: ReactNativeFirebase.FirebaseAppOptions = {
   clientId: '828623524609-gppmr47iqmpg7nkfdepqlgjb0hr5r8f2.apps.googleusercontent.com',
 }
 
-class Firebase {
+class Auth {
 
   constructor() {
-    console.log('123')
+    if (!firebase.apps.length)
     firebaseApp.initializeApp(iosConfig)
   }
 
@@ -40,13 +40,14 @@ class Firebase {
     return await firebase.auth().signInWithCredential(credential)
   }
 
-  loginWithGoogle = async () => {
+  loginWithGoogle = async (): Promise<FirebaseAuthTypes.UserCredential> => {
     await GoogleSignin.configure( {
       iosClientId: '828623524609-gppmr47iqmpg7nkfdepqlgjb0hr5r8f2.apps.googleusercontent.com'
     })
 
-    const {idToken} = await GoogleSignin.signIn()
 
+
+    const {idToken} = await GoogleSignin.signIn()
     const {accessToken} = await GoogleSignin.getTokens()
     const credential = firebase.auth.GoogleAuthProvider.credential(idToken, accessToken)
 
@@ -54,4 +55,4 @@ class Firebase {
   }
 }
 
-export const FirebaseStore = new Firebase()
+export const AuthStore = new Auth()

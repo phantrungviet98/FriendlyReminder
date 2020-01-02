@@ -11,35 +11,17 @@ export const Styles = StyleSheet.create({
     paddingHorizontal: 20,
     backgroundColor: Colors.white_FFFFFF,
   },
-  subTitle: {
-    fontSize: 18,
-    color: Colors.black_3B3B3B,
+  wrapTextInput: {
+    flex: 2,
+    justifyContent: 'center'
   },
-  button1: {
+  button: {
     backgroundColor: Colors.green_42CA53,
-    width: 250,
-    height: 50,
+    paddingHorizontal: 20,
+    height: 50
   },
-  button2: {
-    backgroundColor: Colors.blue_053AFD,
-    width: 250,
-    height: 50,
-  },
-  button3: {
-    backgroundColor: Colors.red_FD1814,
-    width: 250,
-    height: 50,
-  },
-  wrapBody: {
-    marginTop: 50,
-    flex: 4,
-    justifyContent: 'space-around',
-    alignItems: 'center',
-  },
-  skip: {
-    marginTop: 30,
-    flex: 4,
-    textDecorationLine: 'underline',
-    alignSelf: 'center',
+  wrapButton: {
+    flex: 3,
+    alignItems: 'center'
   },
 })

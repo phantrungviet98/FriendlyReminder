@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "828623524609-0febnmngjlits1ergnvkct42166gs0tn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.friendlyreminder",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
           "client_id": "828623524609-r54q5ote1ih7ac5qbg9n18c065jh5r1i.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -30,6 +38,14 @@
             {
               "client_id": "828623524609-r54q5ote1ih7ac5qbg9n18c065jh5r1i.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "828623524609-gppmr47iqmpg7nkfdepqlgjb0hr5r8f2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.friendlyreminder",
+                "app_store_id": "284882215"
+              }
             }
           ]
         }

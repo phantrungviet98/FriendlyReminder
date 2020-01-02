@@ -36,6 +36,16 @@
 				<string>com.googleusercontent.apps.828623524609-gppmr47iqmpg7nkfdepqlgjb0hr5r8f2</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Friendly Reminder</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>friendlyreminder</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>

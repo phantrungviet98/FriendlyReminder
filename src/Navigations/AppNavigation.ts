@@ -2,17 +2,19 @@ import {createAppContainer} from 'react-navigation'
 import {createStackNavigator} from 'react-navigation-stack'
 import WelcomeScreen from '../Screens/LoginScreen/WelcomeScreen'
 import EnterEmailScreen from '../Screens/LoginScreen/EnterEmailScreen'
+import LogInScreen from '../Screens/LoginScreen/LoginScreen'
 
-const PrivateNavigator = createStackNavigator({
+const PublicNavigator = createStackNavigator({
     Welcome:  {screen: WelcomeScreen},
-    EnterEmail: {screen: EnterEmailScreen}
+    EnterEmail: {screen: EnterEmailScreen},
+    LogIn: {screen: LogInScreen}
 },{
   initialRouteName: 'Welcome',
   headerMode: 'none'
 })
 
 const AppNavigator = createStackNavigator({
-    PrivateNavigator: PrivateNavigator
+    PrivateNavigator: PublicNavigator
 }, {
   headerMode: 'none'
 })
