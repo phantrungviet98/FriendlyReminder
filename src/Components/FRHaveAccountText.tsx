@@ -1,9 +1,9 @@
 import React from 'react'
 import {View, StyleSheet, Text} from 'react-native'
-import {Colors} from '../../../Assets'
+import {Colors} from '../Assets'
 import {useNavigation} from 'react-navigation-hooks'
 
-export const HaveAccountText = () => {
+export const FRHaveAccountText = () => {
   const {navigate} = useNavigation()
 
   return (

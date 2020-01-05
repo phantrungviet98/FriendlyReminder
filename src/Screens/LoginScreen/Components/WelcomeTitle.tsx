@@ -24,5 +24,6 @@ const styles = StyleSheet.create({
   },
   subTitle: {
     color: Colors.gray_7E7E7F,
+    fontSize: Fonts.subTitle
   }
 })

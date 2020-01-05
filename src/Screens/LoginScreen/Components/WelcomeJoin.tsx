@@ -1,14 +1,19 @@
 import React from 'react'
 import {View, StyleSheet} from 'react-native'
-import {FRButton} from '../../../Components'
-import {HaveAccountText} from './HaveAccountText'
+import {FRButton, FRHaveAccountText} from '../../../Components'
 import {Normalize} from '../../../Assets'
+import {useNavigation} from 'react-navigation-hooks'
 
 export const WelcomeJoin = () => {
+  const {navigate} = useNavigation()
+
   return (
     <View style={styles.container}>
-      <FRButton title={'Get Started'}/>
-      <HaveAccountText/>
+      <FRButton title={'Get Started'}
+                onPress={() => {
+                  navigate('SignUp')
+                }}/>
+      <FRHaveAccountText/>
     </View>
   )
 }
