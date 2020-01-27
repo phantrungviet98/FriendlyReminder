@@ -7,7 +7,6 @@ import {genderType} from '../../Common/constants/GenderType'
 import {observer} from 'mobx-react'
 import {useRef, useState} from 'react'
 import {Modalize} from 'react-native-modalize'
-import {useNavigation} from 'react-navigation-hooks'
 
 const pickerData = [
   {
@@ -21,7 +20,6 @@ const pickerData = [
 ]
 
 const ProfileScreen = observer(() => {
-  const {goBack} = useNavigation()
   const modalRef = useRef<Modalize>(null)
   const {user} = userStore
   const [name, setName] = useState(user ? user.displayName : '')
@@ -42,7 +40,6 @@ const ProfileScreen = observer(() => {
 
     userStore.setUser({uid: user.uid, gender, displayName: name, email})
       .then(() => {
-        goBack()
         alert('Update successfully!')
       })
       .catch(err => console.log(err.message))

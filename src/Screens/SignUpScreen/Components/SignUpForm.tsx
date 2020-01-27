@@ -17,13 +17,14 @@ export const SignUpForm = () => {
   const [password, setPassword] = useState('')
 
   const storeUser = (user: FirebaseAuthTypes.User): void => {
+    console.log('user', user)
     if (user) {
       userStore.setUser({
         uid: user.uid,
         displayName: firstName + ' ' + lastName,
         email: user.email ? user.email : '',
         gender: undefined,
-      })
+      }).then()
       navigate('MainTabBar')
     }
   }

@@ -1,9 +1,8 @@
 import * as React from 'react'
-import {PickerView} from '@ant-design/react-native'
 import {observer} from 'mobx-react'
 import {Modalize} from 'react-native-modalize'
 import {Ref, useState} from 'react'
-import {StyleSheet, TouchableOpacity} from 'react-native'
+import {StyleSheet, TouchableOpacity, Picker} from 'react-native'
 import Icon from 'react-native-vector-icons/AntDesign'
 import {Normalize} from '../Assets'
 
@@ -27,9 +26,9 @@ export const FRPicker: React.FC<Props> = observer(
       )
     }
 
-    const onPick = (data: Array<string>): void => {
-      setSelect(data)
-      onPickItem && onPickItem(data[0])
+    const onValueChange = (itemValue: any): void => {
+      setSelect(itemValue)
+      onPickItem && onPickItem(itemValue)
     }
 
 
@@ -40,13 +39,15 @@ export const FRPicker: React.FC<Props> = observer(
         useNativeDriver={true}
         HeaderComponent={renderHeader()}
       >
-        <PickerView
-          data={data}
-          value={select}
-          onChange={onPick}
-          styles={{width: '100%'}}
+        <Picker
+          onValueChange={onValueChange}
           itemStyle={styles.item}
-        />
+          selectedValue={select}
+        >
+          {data.map((item) =>
+            <Picker.Item key={(item.label + item.value)} label={item.label} value={item.value}/>
+          )}
+        </Picker>
       </Modalize>
     )
   },
