@@ -1,8 +1,0 @@
-{
-  "version": "1.2",
-  "minContainerVersion": "1.0",
-  "url": {
-    "url": "https://raw.githubusercontent.com/phantrungviet98/FriendlyReminder/master/index.android.bundle",
-    "isRelative": false
-  }
-}
